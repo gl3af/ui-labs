@@ -17,30 +17,36 @@ const colors = {
 export const tests: Test[] = [
   {
     color: colors.red,
+    name: "Красный",
     type: "arabic",
   },
   {
     color: colors.green,
+    name: "Зеленый",
     type: "arabic",
   },
   {
     color: colors.yellow,
+    name: "Бледно-желтый",
     type: "arabic",
   },
   {
     color: colors.red,
+    name: "Красный",
     type: "picture",
   },
   {
     color: colors.green,
+    name: "Зеленый",
     type: "picture",
   },
   {
     color: colors.yellow,
+    name: "Бледно-желтый",
     type: "picture",
   },
 ];
 
 export type Type = "arabic" | "picture";
 export type Colors = (typeof colors)[keyof typeof colors];
-export type Test = { color: Colors; type: Type };
+export type Test = { color: Colors; name: string; type: Type };
