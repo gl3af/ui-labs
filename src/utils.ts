@@ -1,4 +1,5 @@
 export const generateFiveRandom = (test: number): number[] => {
+  console.log(test);
   const res: number[] = [];
 
   while (res.length !== 5) {
